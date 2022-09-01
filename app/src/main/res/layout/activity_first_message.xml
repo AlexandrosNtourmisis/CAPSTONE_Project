@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color_background"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    tools:context=".home.FirstMessage">
+
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/verificationMessageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="25dp"
+            android:paddingBottom="50dp"
+            android:text="@string/first_message_title"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/VerifiedIcon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="85dp"
+            android:background="@drawable/ic_baseline_dangerous_24"
+            app:layout_constraintBottom_toTopOf="@id/verificationMessageSubtitle"
+            app:layout_constraintStart_toEndOf="@id/verificationMessageTitle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/verificationMessageSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/first_message_sub_title"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/VerifiedLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_button_light"
+        android:onClick="firstMessageActivated"
+        android:text="@string/next_button"
+        android:textColor="@color/white"
+        android:layout_below="@+id/verificationMessageSubtitle"
+
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color_background"
+    android:paddingTop="30dp"
+    tools:context=".login.Login">
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:paddingBottom="20dp"
+        android:text="@string/welcomeMessage"
+        android:textColor="@color/white"
+        android:textSize="45sp">
+
+    </TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/login_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="30dp"
+                        app:cardCornerRadius="12dp"
+
+                        app:cardElevation="20dp">
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:id="@+id/LoginTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="25dp"
+                                    android:paddingTop="30dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="@string/login"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="30sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal">
+
+                                    <com.hbb20.CountryCodePicker
+                                        android:id="@+id/ccp"
+                                        android:layout_width="100dp"
+                                        android:layout_height="48dp"
+                                        android:layout_marginStart="25dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/register_frame"
+                                        app:ccp_showFlag="true"
+                                        app:ccp_showNameCode="false"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@id/PhoneVerificationTitle" />
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/PhoneInputLogin"
+                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="25dp"
+                                        android:hint="@string/hintPhone"
+
+                                        android:paddingStart="20dp"
+                                        android:textColorHint="@color/lightprimary"
+                                        app:boxCornerRadiusBottomEnd="8dp"
+                                        app:boxCornerRadiusBottomStart="8dp"
+                                        app:boxCornerRadiusTopEnd="8dp"
+                                        app:boxCornerRadiusTopStart="8dp"
+
+                                        app:boxStrokeColor="@color/colorAccent"
+                                        app:counterTextColor="@color/colorPrimary"
+
+                                        app:startIconDrawable="@drawable/ic_baseline_smartphone_24">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@drawable/register_frame"
+                                            android:textColor="@color/colorPrimary">
+
+                                        </com.google.android.material.textfield.TextInputEditText>
+
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+                                </LinearLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/PasswordInput"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="25dp"
+                                    android:layout_marginEnd="25dp"
+                                    android:hint="@string/hintPassword"
+                                    android:paddingTop="15dp"
+
+                                    android:textColorHint="@color/lightprimary"
+                                    app:boxCornerRadiusBottomEnd="8dp"
+                                    app:boxCornerRadiusBottomStart="8dp"
+                                    app:boxCornerRadiusTopEnd="8dp"
+                                    app:boxCornerRadiusTopStart="8dp"
+                                    app:boxStrokeColor="@color/colorAccent"
+                                    app:counterTextColor="@color/colorPrimary"
+                                    app:endIconMode="password_toggle"
+
+                                    app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/register_frame"
+                                        android:inputType="textPassword"
+                                        android:textColor="@color/colorPrimary">
+
+
+                                    </com.google.android.material.textfield.TextInputEditText>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <!--    <CheckBox-->
+                                <!--        android:id="@+id/rememberCheckbox"-->
+                                <!--        style="@style/Widget.AppCompat.CompoundButton.CheckBox"-->
+                                <!--        android:layout_width="wrap_content"-->
+                                <!--        android:layout_height="wrap_content"-->
+                                <!--        android:text="@string/remembercheckbox"-->
+                                <!--        android:textSize="12sp"-->
+                                <!--        app:layout_constraintEnd_toEndOf="parent"-->
+                                <!--        app:layout_constraintHorizontal_bias="0.189"-->
+                                <!--        app:layout_constraintStart_toStartOf="@id/PasswordInput"-->
+                                <!--        app:layout_constraintTop_toBottomOf="@id/PasswordInput" />-->
+
+
+                                <Button
+                                    android:id="@+id/forgetpass"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginStart="25dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/zero"
+                                    android:clickable="true"
+                                    android:paddingBottom="15dp"
+                                    android:text="@string/forgotpass"
+                                    android:textColor="@color/colorPrimary"
+                                    app:layout_constraintEnd_toEndOf="@+id/PasswordInput"
+                                    app:layout_constraintTop_toBottomOf="@id/PasswordInput" />
+
+                                <Button
+                                    android:id="@+id/LoginButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="25dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="25dp"
+                                    android:layout_marginBottom="30dp"
+                                    android:background="@drawable/rounded_button_light"
+                                    android:text="@string/login"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/forgetpass" />
+
+                            </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardview_newuser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+
+                        android:layout_marginEnd="30dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="20dp"
+                        android:layout_marginBottom="30dp"
+
+                      >
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <TextView
+
+                                    android:id="@+id/new_user"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="25dp"
+                                    android:paddingTop="30dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="@string/newUserText"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="30sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/LoginButton"/>
+
+
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/LineNewUser"-->
+<!--                                    android:layout_width="310dp"-->
+<!--                                    android:layout_height="1.5dp"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:background="@color/colorPrimaryDark"-->
+<!--                                    android:src="@drawable/login_frame_dark" />-->
+
+                                <Button
+                                    android:id="@+id/CreateAcc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="25dp"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginEnd="25dp"
+                                    android:layout_marginBottom="30dp"
+                                    android:background="@drawable/rounded_button"
+                                    android:clickable="true"
+                                    android:text="@string/newAccountButton"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/new_user" />
+                            </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+
+</RelativeLayout>

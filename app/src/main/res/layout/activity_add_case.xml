@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.AddCase">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="157dp"
+        android:gravity="center"
+        android:text="@string/addtype_case"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="31dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:onClick="FireCase"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/fire_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/icons8_fire_96" />
+
+                <TextView
+                    android:id="@+id/fire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fire_image"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Fire_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:onClick="FloodCase"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/flood_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/icons8_floods_96" />
+
+                <TextView
+                    android:id="@+id/flood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/flood_image"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Flood_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="180dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/firstcard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:onClick="WildfireCase"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/wildfire_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/icons8_fire_hazard_96" />
+
+                <TextView
+                    android:id="@+id/wildfire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wildfire_image"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Wildfire_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/secondcard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:onClick="HurricaneCase"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/hurricane_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/icons8_hurricane_96" />
+
+                <TextView
+                    android:id="@+id/hurricane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hurricane_image"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Hurricane_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="330dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:onClick="EarthquakeCase"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/earthquake_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/icons8_earthquakes_90" />
+
+                <TextView
+                    android:id="@+id/erathquake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/earthquake_image"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Earthquake_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/forthcard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:longClickable="true"
+            app:cardCornerRadius="20dp"
+            android:onClick="TornadoCase"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/tornadoImage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/icons8_tornado_96" />
+
+                <TextView
+                    android:id="@+id/tornado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tornadoImage"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Tornado_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="479dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fifthcard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:onClick="LandslideCase"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/landslide_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/icons8_landslide_96" />
+
+                <TextView
+                    android:id="@+id/landslide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/landslide_image"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Landslide_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sixthcard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:onClick="TsunamiCase"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/tsunami_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/icons8_tsunami_96" />
+
+                <TextView
+                    android:id="@+id/tsunami"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tsunami_image"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Tsunami_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="628dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/seventhcard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:onClick="IcyRoadCase"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icyroad_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/icons8_road_90" />
+
+                <TextView
+                    android:id="@+id/icy_road"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icyroad_image"
+                    android:layout_centerInParent="true"
+                    android:text="@string/IcyRoad_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/eighthcard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:onClick="Thunderstorm"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/car_accident_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/icons8_lightning_bolt_90" />
+
+                <TextView
+                    android:id="@+id/car_accident"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/car_accident_image"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Thunderstorm_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="778dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:onClick="CarAccidentCase"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/robbery_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/icons8_crashed_car_96" />
+
+                <TextView
+                    android:id="@+id/robbery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/robbery_image"
+                    android:layout_centerInParent="true"
+                    android:text="@string/CarAccident_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:onClick="RobberyCase"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/shooting_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/icons8_black_ski_mask_96" />
+
+                <TextView
+                    android:id="@+id/shooting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shooting_image"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Robbery_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="927dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:onClick="Terrorism"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/terrorism_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/icons8_robbery_96" />
+
+                <TextView
+                    android:id="@+id/terrorism"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/terrorism_image"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Terrorism_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:onClick="OtherCase"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Other_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="1076dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomMenuBar"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_bottombar"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

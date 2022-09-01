@@ -1,0 +1,335 @@
+<resources>
+    <string name="app_name">WarningApp</string>
+    <string name="warning">Warning</string>
+    <string name="app">App</string>
+    <string name="guidelines">Guidelines</string>
+    <string name="settings">Settings</string>
+    <string name="casesReported">Cases Reported</string>
+    <string name="welcomeMessage">Hello There</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="remembercheckbox">remember me</string>
+    <string name="newUserText">New User?</string>
+    <string name="newAccountButton">Create an account</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintPassword">Password</string>
+    <string name="RepPassword">Re-enter password</string>
+    <string name="hintFirstName">First Name</string>
+    <string name="hintLastName">Last Name</string>
+    <string name="hintAge">Age</string>
+    <string name="forgotpass">Forgot password?</string>
+    <string name="backIcon">back</string>
+    <string name="next_button">Next</string>
+    <string name="verify_button">Verify</string>
+    <string name="hintPhone">Phone number</string>
+    <string name="phoneVerificationTitle">Phone Verification</string>
+    <string name="CodeVerificationTitle">Verify the code</string>
+    <string name="hintCodeNumber">6 digit code</string>
+    <string name="forgotPasswordTitle">Forgot Password?</string>
+    <string name="forgotPasswordTitle_">Don\'t Worry </string>
+    <string name="forgotPasswordMessage">Type your phone number</string>
+    <string name="forgotPasswordMessage2">Select your country code</string>
+    <string name="newPasswordMessage">Type your new password</string>
+    <string name="hintnewPassword">New password</string>
+    <string name="RepnewPassword">Re-enter new password</string>
+    <string name="changePasswordButton">Change Password</string>
+    <string name="verificationSuccessTitle">Your \naccount \nhas \nbeen \ncreated </string>
+    <string name="verificationSuccessMessage">Login to access our features</string>
+    <string name="newPassSuccessTitle_FP">Your \npassword \nhas \nbeen \nchanged </string>
+    <string name="newPassSuccessMessage_FP">Login in with your new password</string>
+    <string name="ban_message">Your \naccount \nhas \nbeen \npermanently \nbanned</string>
+    <string name="first_message_title">Your \naccount \nhas \nreceived \nmany \nreports</string>
+    <string name="first_message_sub_title">If you get more reports, your account will be permanently banned.\n \nPlease be more careful!\nTrolling and hating are not tolerated in this app</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="Fire_">Fire</string>
+    <string name="Flood_">Flood</string>
+    <string name="Wildfire_">Wildfire</string>
+    <string name="Hurricane_Tornado">Hurricane / Tornado</string>
+    <string name="Hurricane_">Hurricane</string>
+    <string name="Earthquake_">Earthquake</string>
+    <string name="Tornado_">Tornado</string>
+    <string name="Landslide_">Landslide</string>
+    <string name="Tsunami_">Tsunami</string>
+    <string name="IcyRoad_">Icy Road</string>
+    <string name="CarAccident_">CarAccident</string>
+    <string name="Thunderstorm_">Thunderstorm</string>
+    <string name="Robbery_">Robbery</string>
+    <string name="Terrorism_">Terrorism</string>
+    <string name="Other_">Other</string>
+    <string name="icyroad_guideline_title">Icy Road Guidelines</string>
+    <string name="icyroad_guideline"> Make sure all passengers are wearing seat belts.\n
+\nKeep your windows clear with the defroster and windshield wipers.\n
+
+\nBrake, change speeds, and turn slowly and gently.\n
+
+\nSignal early before a turn, stop, or lane change.\n
+
+\nKeep at least three seconds distance from the vehicle in front of you.\n
+
+\nPump your non-antilock brakes slowly and gently when you need to stop.\n
+
+\nIf you skid, turn the wheels in the direction of the skid.\n
+
+\nRemember that a four-wheel-drive vehicle can maneuver better on ice, but still can\'t stop quickly.\n
+
+\nUse tire chains if recommended by local road officials.\n
+
+</string>
+    <string name="carAccident_guideline_title">Car Accident Guidelines</string>
+    <string name="carAccident_guideline"> Check yourself and your passengers for injuries. If you or other passenger is injured, call the police or ask someone else to do so. If you\'re seriously injured, try not to move, and wait for help.\n
+
+\nIf you\'re able to, move to the side of the road or a sidewalk. If your car is safe to drive pull it to the side of the road.\n
+
+\nCall the police. The responding officers will fill out an accident report and document the scene. If the police can\'t come to the scene of the accident, you can go to the nearest police station and complete a report yourself.\n
+
+\nWait for help. Turn off your engine and turn on your hazard lights to warn other vehicles to slow down.\n
+
+\nAfter making sure you and any passengers are uninjured, exchange contact and insurance information with the other driver if exists.\n
+
+\nDocument the accident: identify the officers, get a copy for your insurance company, take pictures of the cars involved, take down names, talk to any witnesses.\n
+
+\nNotify your insurance agent and start the claims process.
+
+</string>
+
+    <string name="robbery_guideline_title">Robbery Guidelines</string>
+    <string name="robbery_guideline"> Remain calm, do not resist and take no action that may jeopardize your safety.\n
+
+\nFollow the robber\'s directions, but do not offer more than what they ask for. Don\'t argue.\n
+
+\nMake mental notes of the robber\'s appearance. You\'ll need to describe the suspect when filing your report. If they come or go in a car, try to note the make and model and license plate number.\n
+
+\nNotice what the robber does so you can include it in your report. If there are two accomplices, pay attention to any conversations they have with one another. Try to remember what they touch during the robbery so that police can check those areas for fingerprints.\n
+
+\nAfter the robbery, go immediately to a safe location, then report the crime.\n
+
+\nYour personal safety is your top priority. Make sure you feel secure before you call the police. If you\'re in an isolated area, move to an area with people and ask someone to stay with you while you wait for help. If you opt to remain at the crime scene, try not to touch anything.
+
+</string>
+
+    <string name="thunderstorm_guideline_title">Thunderstorm Guidelines</string>
+    <string name="thunderstorm_guideline"> Listen to local news or NOAA Weather Radio for emergency updates. Watch for signs of a storm, like darkening skies, lightning flashes or increasing wind.\n
+
+\nPostpone outdoor activities if thunderstorms are likely to occur.\n
+
+\nIf a severe thunderstorm warning is issued, take shelter in a substantial building or in a vehicle with the windows closed. \n
+
+\nIf you can hear thunder, you are close enough to be in danger from lightning. If thunder roars, go indoors! The National Weather Service recommends staying inside for at least 30 minutes after the last thunder clap.\n
+
+\nAvoid electrical equipment and telephones. Use battery-powered TVs and radios instead.\n
+
+\nShutter windows and close outside doors securely. Keep away from windows.\n
+
+\nDo not take a bath, shower or use plumbing.\n
+
+\nIf you are driving, try to safely exit the roadway and park. Stay in the vehicle and turn on the emergency flashers until the heavy rain ends. Avoid touching metal or other surfaces that conduct electricity in and outside the vehicle.\n
+
+\nIf you are outside and cannot reach a safe building, avoid high ground; water; tall, isolated trees; and metal objects such as fences or bleachers.
+</string>
+    <string name="tsunami_guideline_title">Tsunami Guidelines</string>
+    <string name="tsunami_guideline">
+If You Feel a Strong Coastal Earthquake:\n
+
+\nDrop, cover, and hold on to protect yourself from the earthquake.\n
+
+\nWhen the shaking stops, gather members of your household and review your evacuation plan. A tsunami may be coming within minutes.\n
+
+\nUse a NOAA Weather Radio or stay tuned to a Coast Guard emergency frequency station, or a local radio or television station for updated emergency information.\n
+
+\nFollow instructions issued by local authorities. Recommended evacuation routes may be different from the one you planned, or you may be advised to climb higher.\n
+
+\nIf you hear an official tsunami warning or detect signs of a tsunami, evacuate at once. If you evacuate, take your animals with you.\n
+
+\nGet to higher ground as far inland as possible. Watching a tsunami from the beach or cliffs could put you in grave danger. If you can see the wave, you are too close to escape it.\n
+
+\nAvoid downed power lines and stay away from buildings and bridges from which heavy objects might fall during an aftershock.\n
+
+\nStay away until local officials tell you it is safe. A tsunami is a series of waves that may continue for hours. Do not assume that after one wave the danger is over. The next wave may be larger than the first one.
+</string>
+    <string name="landslide_guideline_title">Landslide Guidelines</string>
+    <string name="landslide_guideline">
+If you suspect imminent danger, evacuate immediately. Inform affected neighbors if you can, and contact fire or police department.\n
+
+\nListen for unusual sounds that might indicate moving debris, such as trees cracking or boulders knocking together.\n
+
+\nIf you are near a stream or channel, be alert for any sudden increase or decrease in water flow and notice whether the water changes from clear to muddy. Be prepared to move quickly.\n
+
+\nBe especially alert when driving— watch for collapsed pavement, mud, fallen rocks and other indications of possible debris flow.\n
+
+\nIf you are ordered or decide to evacuate, take your animals with you.\n
+
+\nDuring Severe Storms stay alert and awake.\n
+
+\nListen to local news stations on a battery-powered radio for warnings of heavy rainfall.
+    </string>
+    <string name="terrorism_guideline_title">Terrorism Guidelines</string>
+    <string name="terrorism_guideline">
+Remain calm and be patient.\n
+
+\nFollow the advice of local emergency officials. Listen to your radio or television for news and instructions.\n
+
+\nIf the event occurs near you, check for injuries. Give first aid and get help for seriously injured people.\n
+
+\nIf the event occurs near your home while you are there, check for damage using a flashlight. Do not light matches or candles or turn on electrical switches. Check for fires, sniff for gas leaks, starting at the water heater. If you smell gas or suspect a leak, turn off the main gas valve, open windows, and get everyone outside quickly. Secure your pets.
+
+\nCall your family contact.\n
+
+\nCheck on your neighbors, especially those who are elderly, children or disabled.\n
+
+\nIf you have to evacuate your home:\n
+\nWear long-sleeved shirts, long pants and sturdy shoes so you can be protected as much as possible.\n
+
+\nTake your pets with you; do not leave them behind. Because pets are not permitted in public shelters, follow your plan to go to a relative\'s or friend\'s home, or find a \"pet-friendly\" hotel.\n
+
+\nLock your home.\n
+
+\nUse travel routes specified by local authorities—don\'t use shortcuts because certain areas may be impassable or dangerous.
+    </string>
+    <string name="hurricane_tornado_guideline_title">Hurricane / Tornado Guidelines</string>
+    <string name="hurricane_tornado_guideline">
+\nIf you are outdoors:\n
+
+\nSeek shelter in a basement, shelter or sturdy building.\n
+
+\nIf you cannot quickly walk to a shelter, immediately get into a vehicle and try to drive to the closest sturdy shelter. Remember to buckle your seat belt.\n
+
+\nStay away from bridge/highway overpasses.\n
+
+\nIf strong winds and flying debris occurs while driving, pull over and park, keeping your seat belt on and engine running. Put your head down below the windows, covering your head with your hands and a blanket.
+    </string>
+    <string name="fire_guideline_title">Fire Guidelines</string>
+    <string name="fire_guideline">
+In a case of a home fire get out, stay out and call for help. Do not go back inside.\n
+
+\nKnow how to safely operate a fire extinguisher.\n
+
+\nYell \"Fire!\" several times, go outside, use the stairs rather than the elevator. Do not try to take your things with you; you may not be in time for exit.\n
+
+\nDo not touch warm handles and use a second route in case the primary one is blocked. If you must escape through smoke, get low and go under the smoke, close the doors on your way out.\n
+
+\nIf smoke or flames block your way out, stay in the room, close the door, place a wet towel under it and call the fire department or 911.\n
+
+\nOpen a window and wave a brightly colored cloth or flashlight for signal.\n
+
+\nIf your clothes catch on fire, stop what you\'re doing immediately, drop to the ground and cover your face, roll over and over or back and forth until the flames go out. Do not run. Once the flames are out, cool the burned skin with cool water for 3 to 5 minutes and seek for medical attention.  </string>
+
+    <string name="wildfire_guideline_title">Wildfire Guidelines</string>
+    <string name="wildfire_guideline">
+If you are trapped, crouch in the nearest pond, river or pool, if exists.\n
+
+\nDo not put wet clothing over your nose or mouth, because moist air causes more damage to airways than dry air.\n
+
+\nIf there is no water nearby:\n
+
+\nLook for shelter in a cleared area or among a bed of rocks.\n
+
+\nLie flat, face down and cover your body with soil.\n
+
+\nBreathe the air close to the ground to avoid inhaling smoke.  </string>
+    <string name="flood_guideline_title">Flood Guidelines</string>
+    <string name="flood_guideline">
+        <b>STAYING SAFE INDOORS</b>\n
+
+\nTurn off the power and water mains if instructed to do so by local authorities.\n
+
+\nBoil tap water until water sources have been declared safe.\n
+
+\nAvoid contact with flood water.\n
+
+\nContinue listening to local TV stations, radio etc.\n
+
+\nDon\'t use gas or electrical appliances that have been flooded.\n
+
+\nDispose any food that comes into contact with flood water.\n
+
+\n<b>STAYING SAFE OUTDOORS</b>\n
+
+\nDon\'t walk, swim or drive through flood water.\n
+
+\nIf you are on a flooded road with rapidly rising waters, get immediately out of your car and move to higher ground.\n
+
+\nDon\'t allow children or pets to play in or near flood water.\n
+
+\nStay away from areas subject to flooding, such as underpasses, dips, canyons. </string>
+    <string name="earthquake_guideline_title">Earthquake Guidelines</string>
+    <string name="earthquake_guideline">
+ <b>STAYING SAFE INDOORS</b>\n
+
+\nDrop, cover and hold on.\n
+
+\nMove as little as possible.\n
+
+\nTry to protect your head and torso.\n
+
+\nIf you must leave a building after the shaking stops, better use the stairs rather than the elevator.\n
+
+\nIf you smell gas, get out of the house and move as far away as possible.\n
+
+ \n<b>STAYING SAFE OUTDOORS</b>\n
+
+\nFind a clear spot and drop to the ground, stay there until the shaking stops.\n
+
+\nTry to get as far away as possible from tall buildings, power lines and trees.\n
+
+\nIf you are in a mountainous area or near unstable slopes and cliffs, be alert for falling rocks and other debris as well as landslides.
+ </string>
+    <string name="title_activity_maps_">Map</string>
+    <string name="addtype_case">CHOOSE CASE TYPE</string>
+    <string name="details_hint">Enter details (Optional)</string>
+    <string name="post_case_title">Post this case</string>
+    <string name="case_type"> Type</string>
+    <string name="case_location">Location</string>
+    <string name="case_time">Time</string>
+    <string name="case_date">Date</string>
+    <string name="case_severity">Severity</string>
+    <string name="unknown">unknown</string>
+    <string name="post_button">POST</string>
+    <string name="cancel_button">CANCEL</string>
+    <string name="enter_case_type">enter type</string>
+    <string name="case_city">City</string>
+    <string name="country_case"> Country</string>
+    <string name="EditProf">Edit Profile</string>
+    <string name="update">UPDATE</string>
+    <string name="Guidelines_title">GUIDELINES</string>
+    <string name="AmISafe_hint">Press to check if you are safe</string>
+    <string name="AmISafe_button">Am I safe?</string>
+    <string name="cases_today">CASES TODAY</string>
+    <string name="location_settings_title">Edit Location-based Settings</string>
+    <string name="notificationcheck_timer">Location check (notifications) timer</string>
+    <string name="notificationcheck_timer_des">*This is the timer that the application will automatically check if your location is near cases. You can change it to manual if you do not want any auto notifications</string>
+    <string name="safety_distance">Safety Distance</string>
+    <string name="safety_distance_des">*The distance between your location and the cases location</string>
+    <string name="search_byloc">Search by location</string>
+    <string name="type">TYPE</string>
+    <string name="location">LOCATION</string>
+    <string name="time">TIME</string>
+    <string name="report_message">You have reported this user</string>
+    <string name="Report">REPORT USER</string>
+    <string name="users__cases">USER\'S CASES</string>
+    <string name="author">author</string>
+    <string name="case_details">details</string>
+    <string name="delete_post">DELETE POST</string>
+    <string name="comments">COMMENTS</string>
+    <string name="case_title">CASE</string>
+    <string name="map">MAP</string>
+    <string name="verifications">verifications</string>
+    <string name="verify">VERIFY CASE</string>
+    <string name="viewprof">VIEW PROFILE</string>
+    <string name="verified_message">You have verified this case</string>
+    <string name="edit_profile_button">EDIT PROFILE</string>
+    <string name="change_pass_button">CHANGE PASSWORD</string>
+    <string name="change_loc_set_button">CHANGE LOCATION SETTINGS</string>
+    <string name="log_out_button">LOG OUT</string>
+    <string name="mycases">MY CASES</string>
+    <string name="comment">COMMENT</string>
+    <string name="commenter">commenter</string>
+    <string name="date">DATE</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="add_case">Add Case</string>
+
+
+
+
+</resources>

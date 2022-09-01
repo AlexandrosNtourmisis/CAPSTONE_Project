@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color_background"
+    android:paddingTop="105dp"
+    tools:context=".register.Phone_verification_register">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="20dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_marginTop="15dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_marginStart="22dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/backIcon"
+
+            />
+
+
+        <TextView
+            android:id="@+id/PhoneVerificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/phoneVerificationTitle"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/backButton"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/CountryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_marginTop="5dp"
+                app:ccp_showNameCode="false"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/register_frame"
+                app:ccp_showFlag="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/PhoneVerificationTitle"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneInput"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintPhone"
+                android:paddingEnd="25dp"
+                android:paddingStart="20dp"
+                android:textColorHint="@color/lightprimary"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorAccent"
+                app:counterTextColor="@color/colorPrimary"
+
+
+                app:layout_constraintStart_toEndOf="@id/CountryCode"
+                app:layout_constraintTop_toBottomOf="@id/PhoneVerificationTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/register_frame"
+                    android:inputType="phone"
+                    android:textColor="@color/colorPrimary">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+            <Button
+                android:id="@+id/Next_step_register_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:clickable="true"
+                android:onClick="VerifyNumber"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="@string/next_button"
+                android:textColor="@color/white"
+                android:layout_marginBottom="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phoneInput"
+
+
+                />
+
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

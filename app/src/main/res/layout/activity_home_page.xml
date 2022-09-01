@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color_background"
+    android:elevation="100dp"
+    tools:context=".home.HomePage">
+
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/texxxtttt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:text="@string/AmISafe_hint" />
+
+        <Button
+        android:id="@+id/button7"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        android:background="@drawable/button_white_transparent"
+        android:elevation="30dp"
+            android:onClick="checksafe"
+        android:text="@string/AmISafe_button"
+        android:textColor="@color/white"
+        app:rippleColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TodayTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginStart="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/cases_today"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/search_bar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:paddingTop="10dp"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:layout_marginStart="150dp"-->
+
+    <!--        android:background="@drawable/search_bar_drawable"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:hint="search case by location"-->
+
+    <!--        />-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/TodayTitle"
+
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="60dp">
+
+
+            <TextView
+                android:id="@+id/typeCase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:elevation="15dp"
+                android:text="TYPE"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="LOCATION"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="40dp"
+                android:gravity="end"
+                android:text="TIME"
+                android:textSize="12sp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="8dp"
+                android:id="@+id/recyclerCases"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_below="@id/time" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomMenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu_bottombar" />
+
+
+</RelativeLayout>

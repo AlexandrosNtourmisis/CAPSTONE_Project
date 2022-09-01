@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.ViewMyPost"
+    android:background="@drawable/gradient_color_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Case"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Caset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="MY CASE"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"  />
+
+
+
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewPostInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Case"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/severity"
+                android:layout_marginEnd="20dp">
+
+                <ImageView
+                    android:id="@+id/iconType_posts"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="close"
+
+
+                    android:src="@drawable/ic_baseline_close_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/severity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sev"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/severitytitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+
+
+                        android:text="@string/case_severity"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iconType_post"
+                android:layout_below="@id/severity"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="320dp"
+
+                android:src="@drawable/ic_baseline_lock_24" />
+
+            <TextView
+                android:id="@+id/typeCase_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iconType_post"
+                android:layout_marginStart="20dp"
+                android:elevation="15dp"
+                android:text="@string/case_type"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/city_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_below="@id/severity"
+                android:gravity="center"
+                android:text="@string/case_city"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/country_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/city_post"
+                android:gravity="center"
+                android:text="@string/country_case"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/time_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/severity"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="end"
+                android:text="@string/case_time"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/date_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_post"
+                android:layout_marginEnd="20dp"
+                android:gravity="end"
+                android:text="@string/case_date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/typeCase_post"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+
+                android:text="@string/case_details"
+                android:textSize="20sp" />
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details"
+                android:layout_marginBottom="10dp"
+
+                android:layout_marginStart="20dp">
+
+
+                <TextView
+                    android:id="@+id/author_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="17dp"
+
+                    android:text="@string/author"
+                    android:textSize="15sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/deletePost"
+                    android:layout_width="130dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="4dp"
+                    android:onClick="deletePOST"
+                    android:layout_marginEnd="20dp"
+                    android:longClickable="true"
+                    android:layout_alignEnd="@id/author_post"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginStart="200dp"
+                    android:clickable="true"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delete_post"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:gravity="center"
+
+                        />
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/CommentsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardviewPostInfo"
+        android:layout_marginStart="20dp"
+        android:text="@string/comments"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"  />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CommentsTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recyclerComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

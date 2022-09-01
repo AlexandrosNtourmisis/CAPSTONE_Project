@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="acg.edu.warningapp">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".home.Channels"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".home.MapsActivity_"
+            android:label="@string/title_activity_maps_"/>
+        <activity android:name=".home.ActivateCasesCheck" />
+        <activity android:name=".home.ViewGuideline" />
+        <activity android:name=".home.AddCase_secondPart" />
+        <activity android:name=".home.Guidelines" />
+        <activity android:name=".home.Search" />
+        <activity android:name=".home.AddCase" />
+        <activity android:name=".home.LocationChanges" />
+        <activity android:name=".home.CasesNearAlert" />
+        <activity android:name=".home.TestingLocation" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="@string/google_maps_key" /> -->
+        <activity android:name=".home.BanMessage" />
+        <activity android:name=".home.FirstMessage" />
+        <activity android:name=".home.ChangePassword" />
+        <activity android:name=".home.EditProfile" />
+        <activity android:name=".home.ViewMyPost" />
+        <activity android:name=".home.ViewProfile" />
+        <activity android:name=".home.ViewAuthor" />
+        <activity android:name=".home.ViewPost" />
+        <activity android:name=".home.HomePage" />
+        <activity android:name=".login.NewPasswordChangedMessage" />
+        <activity android:name=".login.CodeVerificationForgotPass" />
+        <activity android:name=".register.VerificationMessage" />
+        <activity android:name=".login.NewPassword" />
+        <activity android:name=".login.ForgotPasswordRequestPhoneNumber" />
+        <activity android:name=".register.CodeVerification" />
+        <activity android:name=".register.Phone_verification_register" />
+        <activity android:name=".register.Register" />
+        <activity android:name=".login.Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".home.CheckNearLocations"
+            android:enabled="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color_background"
+    tools:context=".register.CodeVerification">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="20dp">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:id="@+id/backButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="32dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+
+            />
+
+
+        <TextView
+            android:id="@+id/PhoneVerificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/CodeVerificationTitle"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginStart="40dp"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            />
+
+
+        <com.chaos.view.PinView
+            android:paddingTop="5dp"
+            android:id="@+id/pin_view"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="#65EAEAEA"
+            app:cursorColor="@color/black"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="42dp"
+            app:itemRadius="5dp"
+            app:itemWidth="42dp"
+            app:lineColor="@color/colorAccent"
+            app:lineWidth="1dp" />
+
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:id="@+id/codeInput"-->
+    <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="@string/hintCodeNumber"-->
+    <!--        android:paddingStart="55dp"-->
+    <!--        android:paddingEnd="55dp"-->
+    <!--        android:textColorHint="@color/lightprimary"-->
+    <!--        app:boxCornerRadiusBottomEnd="8dp"-->
+    <!--        app:boxCornerRadiusBottomStart="8dp"-->
+    <!--        app:boxCornerRadiusTopEnd="8dp"-->
+    <!--        app:boxCornerRadiusTopStart="8dp"-->
+    <!--        app:boxStrokeColor="@color/colorAccent"-->
+    <!--        app:counterTextColor="@color/colorPrimary"-->
+
+
+    <!--        app:layout_constraintStart_toEndOf="@id/PhoneVerificationTitle"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/PhoneVerificationTitle">-->
+
+    <!--        <com.google.android.material.textfield.TextInputEditText-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:textColor="@color/colorPrimary">-->
+
+    <!--        </com.google.android.material.textfield.TextInputEditText>-->
+
+
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+        <Button
+            android:id="@+id/Verify_Code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rounded_button_light"
+            android:clickable="true"
+            android:onClick="SuccessMessageVerified"
+            android:text="@string/verify_button"
+            android:textColor="@color/white"
+
+
+            />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

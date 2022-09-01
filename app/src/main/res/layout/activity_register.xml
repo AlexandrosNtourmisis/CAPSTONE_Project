@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color_background"
+    android:paddingTop="5dp"
+    tools:context=".register.Register">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="60dp"
+        app:cardCornerRadius="12dp"
+
+        app:cardElevation="20dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_marginTop="15dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_marginStart="22dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/backIcon"
+        />
+
+
+    <TextView
+        android:id="@+id/RegisterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+
+        android:layout_marginTop="15dp"
+        android:text="@string/register"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FirstNameInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintFirstName"
+            android:paddingStart="25dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="25dp"
+            android:textColorHint="@color/lightprimary"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/colorAccent"
+            app:counterTextColor="@color/colorPrimary"
+
+            app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/register_frame"
+                android:textColor="@color/colorPrimary">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/LastNameInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintLastName"
+            android:paddingStart="25dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="25dp"
+            android:textColorHint="@color/lightprimary"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/colorAccent"
+            app:counterTextColor="@color/colorPrimary"
+            app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/register_frame"
+                android:textColor="@color/colorPrimary">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EmailInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintEmail"
+            android:paddingStart="25dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="25dp"
+            android:textColorHint="@color/lightprimary"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/colorAccent"
+            app:counterTextColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LastNameInput"
+            app:startIconDrawable="@drawable/ic_baseline_alternate_email_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/register_frame"
+                android:textColor="@color/colorPrimary">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PasswordInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:hint="@string/hintPassword"
+            android:paddingStart="25dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="25dp"
+
+            android:textColorHint="@color/lightprimary"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/colorAccent"
+            app:counterTextColor="@color/colorPrimary"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/EmailInput"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/register_frame"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPassword">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Re_PasswordInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/RepPassword"
+            android:paddingStart="25dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="25dp"
+            android:textColorHint="@color/lightprimary"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/colorAccent"
+            app:counterTextColor="@color/colorPrimary"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/PasswordInput"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/register_frame"
+                android:inputType="textPassword">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/register_frame"
+            app:ccp_showFullName="true"
+            app:ccp_showPhoneCode="false"
+            app:ccp_showNameCode="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="15dp"
+            android:gravity="center"
+
+            android:text="@string/hintAge"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <DatePicker
+            android:id="@+id/age"
+            android:layout_marginTop="-40dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:background="@drawable/register_frame"
+            android:spinnersShown="true" />
+
+        <Button
+            android:id="@+id/Next_step_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:clickable="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="@string/next_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+
+
+            />
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>
